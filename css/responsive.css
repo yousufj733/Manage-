@@ -1,0 +1,524 @@
+
+/*
+
+we will em instead of rem because in many different browser they cannot catch rem properly //////////////////
+
+(rem and em do NOT depend on html font-size in media queries! Instead) 
+
+~~~~~~~~~ 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+
+/*-------------- START--------------------  */
+
+
+
+
+
+/* Laptop screen  */
+@media only screen and (min-width:1200px) and  (max-width:1440px)
+{
+
+.container
+{
+width: 1140px;
+}   
+
+
+/* Hero CSS  */
+.hero-text h1
+{
+font-size: 33px;
+}
+/* Work CSS  */
+.work-heading h2
+{
+font-size: 28px;
+}
+
+
+}
+
+/* 
+
+
+Ipad 
+Tablet 
+screen  
+
+*/
+@media only screen and (min-width:768px) and  (max-width:1199px)
+{
+
+.container,.work-container
+{
+width: 96%;
+}
+
+/* Hero CSS  */
+.hero-text h1
+{
+font-size: 23px;
+}
+/* Work CSS  */
+
+.work-para-p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 13px;
+    /* padding-left: 72px;
+    padding-right: 264px;  */
+  }
+.work-heading h2
+{
+font-size: 20px;
+}
+.work-head h5 
+{
+font-size:14px;
+}
+
+
+.work-number
+{
+padding: 5px 19px;
+border-radius: 25px;
+}
+/* client css */
+.client-box img {
+    width: 21%;
+
+    top: -9%;
+    left: 40%;
+  }
+  .client-box p {
+    line-height: 1.7 !important;
+    opacity: 0.5;
+    font-size: 10px;
+  }
+  .client-box h2
+  {
+     margin-top: 0!important;
+  }
+  .client-box img {
+    width: 24%;
+    top: -16%;
+    left: 37%;
+  }
+/* footer CSS  */
+
+.footer
+{  
+  grid-template-columns: 1.5fr  1fr 1.5fr;
+  gap: 25px;
+
+}
+.footer-social-links {
+   
+    gap: 16px;
+}
+
+.footer-nav-link:link, .footer-nav-link:visited {
+    font-size: 14px;
+  }
+
+.footer-menu {
+    gap: 32px;
+
+}
+.footer-form input[type="email"] {
+    width: 63%;
+   
+    padding: 5px 13px;
+}
+.footer-form .btn {
+   
+    padding: 5px 20px;
+}
+}
+
+
+/*
+
+Mobile 
+Screen
+
+*/
+
+@media only screen and (min-width:500px) and  (max-width:767px)
+{      
+
+/* Mobiel Menui  */
+header nav {
+display: none;
+}
+
+#hamburger-icon {
+display: block;
+}
+.menu-btn
+{
+display: none;
+}
+
+
+.container,.work-container
+{
+width: 100%;
+}
+/* Hero CSS  */
+.hero-section
+{
+grid-template-columns: 1fr;
+}
+.hero-text
+{
+order: 1;
+}
+.hero-text h1
+{
+font-size: 40px;
+padding-top:20px ;
+}
+
+/* Work CSS  */
+
+.work-heading h2
+{
+font-size: 30px;
+}
+
+.work-flow
+{
+grid-template-columns: 1fr;
+
+}
+.work-head
+{
+grid-template-columns: 1fr 5fr;
+gap: 10px;
+}
+
+.work-para
+{
+grid-template-columns: 1fr;
+}
+/* CTA CSS  */
+
+
+.cta-box
+{   
+    grid-template-columns:1fr;
+
+}
+.cta-text 
+{
+    text-align:center;
+}
+.cta-text h2 
+{
+    font-size:34px;
+}
+.cta-btn 
+{
+    text-align:center;
+}
+
+/* clients CSS  */
+.client-review
+{
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.client-box img {
+    width: 12%;
+    position: absolute;
+    top: -16%;
+    left: 44%;
+  }
+
+
+.client-box
+{
+padding: 20px;
+
+}
+.client-box h5 
+{
+padding-top: 20px!important;
+}
+.clients h2 
+{
+    font-size: 30px;
+}
+/* Footer CSS  */
+.footer
+{  
+  grid-template-columns: 1fr ;
+  row-gap: 80px;
+  text-align: center;
+}
+
+.copyright {
+    margin-top:30px;
+    justify-content: center;
+}
+
+
+.footer-hero
+{
+  /* text-align: center; */
+  align-items: center;
+  order: 3;
+}
+
+.footer-hero-L
+{
+    order: 2;
+}
+.copyright {
+    margin-top:30px;
+    align-self: center;
+}
+.footer-end 
+{
+    align-items: center;
+}
+.footer-menu
+{
+    gap: 30px;
+    order: 1;
+    text-align: left;
+    justify-content:center;
+}
+
+
+.footer-form input[type="email"] {
+    width: 62%;
+    padding: 8px 25px;
+}
+.btn-form
+{
+    padding: 8px 25px;
+}
+.footer-nav-link:link, .footer-nav-link:visited {
+  
+    font-size: 14px;
+}
+}
+
+
+/* 
+
+Extra Small 
+Mobile Screen
+
+*/
+@media only screen and (min-width:200px) and  (max-width:499px)
+{
+/* Mobiel Menui  */
+header nav {
+display: none;
+}
+.header {
+  
+    height: 139px;
+}
+.sticky-header.active .header {
+    padding: 40px 48px;
+    align-items: center;
+    margin-top: 35px;
+}
+#hamburger-icon {
+display: block;
+}
+.menu-btn
+{
+display: none;
+}
+
+.container
+{
+width:100%;
+overflow: hidden;
+}
+.work-container
+{
+width:100%;
+margin: 0 5%;
+padding: 0 12%;
+}
+/* Hero CSS  */
+.hero-text
+{
+order: 1;
+}
+.hero-section
+{
+grid-template-columns: 1fr;
+}
+.hero-text h1
+{
+font-size: 30px;
+padding-top:20px ;
+}
+
+
+/* Work CSS  */
+.work-flow
+{
+grid-template-columns: 1fr;
+
+}
+.work-head
+{
+
+grid-template-columns: 1fr 5fr;
+gap: 10px;
+
+}
+.work-heading h2
+{
+font-size: 30px;
+}
+
+.work-head h5 
+{
+font-size:12px;
+margin-left: 39px;
+}
+
+.work-head
+{
+position: relative;
+padding:  5px 0!important;
+
+}
+.work-number
+{
+position: absolute;
+left: -15%;
+}
+.work-para
+{
+grid-template-columns: 1fr;
+}
+.work-para-p
+{
+margin-top: 5px ;
+margin-bottom: 30px ;
+text-align: justify;
+font-size: 13px;
+}
+.work-number
+{
+padding: 5px 19px;
+border-radius: 25px;
+}
+.work-head
+{
+background-color:#f25f3a41;
+}
+/* CTA Css  */
+
+.cta-box
+{   
+    grid-template-columns:1fr;
+
+}
+.cta-text 
+{
+    text-align:center;
+}
+.cta-text h2 
+{
+    font-size:34px;
+}
+.cta-btn 
+{
+    text-align:center;
+}
+
+/* clients CSS  */
+.clients h2 
+{
+    font-size: 30px;
+}
+.client-review
+{
+   
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.client-box
+{
+padding: 30px;
+/* width: 31%; */
+}
+.client-box img {
+    width: 19%;
+    position: absolute;
+    top: -14%;
+    left: 40%;
+  }
+/* Footer CSS  */
+.footer
+{
+    grid-template-columns: 1fr ;
+    row-gap: 80px;
+}
+.footer-hero
+{
+  /* text-align: center; */
+  align-items: center;
+  order: 3;
+}
+
+.footer-hero-L
+{
+    order: 2;
+}
+.copyright {
+    margin-top:30px;
+    justify-content: center;
+}
+.footer-end 
+{
+    align-items: center;
+}
+.footer-menu
+{
+    gap: 30px;
+   order: 1;
+    text-align: left;
+    justify-content:center;
+}
+
+
+.footer-form input[type="email"] {
+    width: 68%;
+    padding: 8px 25px;
+  }
+.footer-social-links
+{
+    gap: 28px;
+}
+.btn-form
+{
+    padding: 8px 25px;
+}
+.footer-nav-link:link, .footer-nav-link:visited {
+  
+    font-size: 14px;
+}
+
+
+}
+
